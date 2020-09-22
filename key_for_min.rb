@@ -3,10 +3,10 @@
 
 def key_for_min_value(name_hash)
   name_hash.each{|key, num|
-    min = name_hash.first 
-    puts min
-    
-    
-  }
-
+    min = name_hash[name_hash.first.first]
+    if num < min
+      min = num
+      min_key = key 
+    }
+  key
 end
